@@ -4,7 +4,7 @@ A Yahoo Finance API to fetch historical stock dataframe https://finance.yahoo.co
 Algorithm is made using `asyncio` to get most speed possible from server.
 Very useful for bulk downloading in cases like backtesting strategy.
 
-The function will return stock `[Quote, Dataframe]` as list cause quotes are also included in the response from server and contains live data about stock so not processing that will a waste.
+The function will return stock `[Quote, Dataframe]` as list cause quotes are also included in the response from server and contains live data about stock so not processing that will be a waste.
 But do not worry you can easily seprate quotes and dataframe by a single liner list comprehension.
 
 Number of concurrent requests is limited by `Semaphore`,
